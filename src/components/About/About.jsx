@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import Navbar from '../Navbar/Navbar'
-import aboutImage from '../../assets/images/About2.svg'
+// import aboutImage from '../../assets/images/About2.svg'
 import Footer from '../Footer/Footer'
 import Scroll from '../Scroll/Scroll'
 import gsap from 'gsap'
@@ -109,7 +109,7 @@ My focus is on bringing user-centric design principles to life, creating intuiti
                 </div>
           </div>
           <div className='py-2 rounded-lg overflow-hidden lg:w-1/2 w-full '>
-            <img src = {aboutImage} alt="" srcset=""/>
+            {/* <img src = {aboutImage} alt="" srcset=""/> */}
           </div>
         </div>
       
