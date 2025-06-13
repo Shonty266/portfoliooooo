@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Oswald:wght@200..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #F4F4F6;
+    font-family: "Capriola", sans-serif;
+    color:#263238;
+}
+
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg);
+    }
+    10% {
+        transform: rotate(14.0deg);
+    }
+    20% {
+        transform: rotate(-8.0deg);
+    }
+    30% {
+        transform: rotate(14.0deg);
+    }
+    40% {
+        transform: rotate(-4.0deg);
+    }
+    50% {
+        transform: rotate(10.0deg);
+    }
+    60% {
+        transform: rotate(0.0deg);
+    }
+    100% {
+        transform: rotate(0.0deg);
+    }
+  }
+  
+  .wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+
+  /* Define default light theme */
+:root {
+    /* Light theme */
+    --background-color: #F4F4F6;
+    --text-color: #1A1A1A;
+    --filter-button: #E2E2E6;
+    --background-button: #FFFFFF;
+    --background-button-bg: #F9F9FD;
+    --skills-bg: #FFFFFF;
+    --cursor-bg: #1A1A1A;
+    --hover-bg: #F0F0F4;
+    --project-bg: #FFFFFF;
+    --theme-bg: #353535;
+    --text-skill: #1A1A1A;
+    --text-skill-active: #FFFFFF;
+    --border-color: #333333;
+}
+
+.dark {
+    /* Dark theme */
+    --background-color: #121212;
+    --text-color: #FFFFFF;
+    --project-bg: #1E1E1E;
+    --filter-button: #2D2D2D;
+    --background-button-bg: #1E1E1E;
+    --background-button: #2D2D2D;
+    --skills-bg: #2D2D2D;
+    --cursor-bg: #FFFFFF;
+    --hover-bg: #363636;
+    --text-skill-active: #FFFFFF;
+    --text-skill: #FFFFFF;
+    --theme-bg: #FFFFFF;
+    --border-color: #333333;
+}
+  
+  /* Apply the theme to the body */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  /* Dark mode switch styling */
+  .dark_mode {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dark_mode_input {
+    display: none; /* Hide default checkbox */
+  }
+  
+  .dark_mode_label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dark_mode_input:checked + .dark_mode_label .icon {
+    transform: rotate(360deg);
+  }
+  

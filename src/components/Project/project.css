@@ -1,0 +1,25 @@
+   .tooltip-text {
+    visibility: hidden;
+    width: max-content;
+    background-color: #dee4e7;
+    color: #263238;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -50%; 
+    right: 0%;
+    opacity: 0;
+    transition: opacity 1s;
+    white-space: wrap; 
+  }
+  
+  .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
+  
